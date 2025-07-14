@@ -1,26 +1,101 @@
-# Resume Categorization powered by Streamlit and Machine Learning
+# Resume Analyzer 🧠📄
 
-![image](./resumecategorization.jpg)
+An intelligent Resume Analyzer tool built using **Machine Learning** and **Natural Language Processing (NLP)** that can automatically categorize resumes based on job domains like Data Science, Web Development, DevOps, HR, and more.
 
-This project leverages machine learning to categorize resumes efficiently. Using Streamlit for an interactive web application and a Kaggle dataset for training, the goal is to automatically classify resumes into predefined categories. The project showcases the use of natural language processing (NLP) and classification algorithms to streamline the resume screening process.
+---
 
-## Dataset
-The dataset used for this project is sourced from Kaggle: [Resume Dataset](https://www.kaggle.com/datasets/jillanisofttech/updated-resume-dataset). This dataset contains a diverse set of resumes and is used to train and evaluate the model’s performance.
+## 🔍 Features
 
-## Try out
-Try out my project using this [link](https://bron322-resumecategorization-app-nxjmvg.streamlit.app/)
+- 📄 Upload and analyze resumes in PDF format  
+- 🧠 Pre-trained ML model (Logistic Regression + TF-IDF)  
+- 📊 Real-time prediction with domain classification  
+- 🖥️ Simple and fast UI using **Streamlit**  
+- ⚡ Instant feedback without backend deployment  
+- 🪶 Lightweight and easy to use
 
-## Technologies
-- **Streamlit:** For building the interactive web interface.
-- **Python:** For implementing machine learning models.
-- **Scikit-learn:** For model building and evaluation.
-- **Pandas:** For data manipulation and analysis.
-- **NLTK:** For natural language processing tasks.
+---
 
-## Usage
-1. Clone the repository.
-`git clone https://github.com/bron322/ResumeCategorization`
-2. `python -m venv venv`
-3. `.\venv\Scripts\activate`
-4. `pip install -r requirements.txt`
-5. `streamlit run app.py`
+## 🛠️ Tech Stack
+
+| Layer       | Technologies Used                            |
+|-------------|-----------------------------------------------|
+| Frontend    | Streamlit (Python-based UI framework)         |
+| Backend     | Python, scikit-learn, pandas, numpy           |
+| File Parsing| PyPDF for PDF text extraction                 |
+| ML/NLP      | TF-IDF vectorizer + Logistic Regression model |
+
+---
+
+## 📁 Folder Structure
+
+Resume-Analyzer/
+├── app.py # Main Streamlit app
+├── tfidf.pkl # Saved TF-IDF vectorizer
+├── logisticmodel.pkl # Trained ML model
+├── requirements.txt # Python dependencies
+├── .gitignore
+└── README.md
+
+yaml
+Copy code
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Aditya121raj/Resume-Analyzer.git
+cd Resume-Analyzer
+2. Create and activate virtual environment
+bash
+Copy code
+python -m venv venv
+venv\Scripts\activate    # For Windows
+3. Install dependencies
+bash
+Copy code
+pip install -r requirements.txt
+4. Run the Streamlit app
+bash
+Copy code
+streamlit run app.py
+📊 How It Works
+Upload a resume in PDF format
+
+The app extracts text using PyPDF
+
+Preprocesses and vectorizes the content using TF-IDF
+
+Predicts the category using a Logistic Regression model
+
+Displays the predicted job role/domain
+
+🧠 Model Training (Optional)
+Model is pre-trained, but if you want to retrain:
+
+python
+Copy code
+# Sample code snippet
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
+👨‍💻 Author
+Aditya Raj
+📬 LinkedIn
+💻 GitHub
+
+📝 License
+This project is licensed under the MIT License — free for personal & academic use.
+
+yaml
+Copy code
+
+---
+
+### 🔧 Next Steps?
+
+अब बस ये करें:
+```bash
+git add README.md
+git commit -m "✨ Updated new README"
+git push origin main
