@@ -86,16 +86,3 @@ Aditya Raj
 
 📝 License
 This project is licensed under the MIT License — free for personal & academic use.
-
-yaml
-Copy code
-
----
-
-### 🔧 Next Steps?
-
-अब बस ये करें:
-```bash
-git add README.md
-git commit -m "✨ Updated new README"
-git push origin main
